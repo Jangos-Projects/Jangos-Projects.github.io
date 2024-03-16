@@ -1,0 +1,15 @@
+#aboutme-info {
+    width: 60%;
+    display: inline-block;
+}
+#aboutme-fig {
+    display: inline-block; 
+    text-align: center;
+    padding: 10px;
+}
+#aboutme-fig figure {
+    margin: 0 10px;
+}
+#aboutme-img {
+    height: 300px;
+}
