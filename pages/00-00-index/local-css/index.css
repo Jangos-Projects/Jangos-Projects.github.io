@@ -1,0 +1,14 @@
+#introduction {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    width: 70%;
+
+}
+#introduction p {
+    font-size: 20px;
+}
+
+#introduction strong {
+    text-align: center;
+}
