@@ -1,15 +1,28 @@
-#aboutme-story {
-    width: 60%;
+.aboutme {
+    width: 100%;
     display: inline-block;
 }
-#aboutme-fig {
+
+.aboutme-story {
+    width: 65%;
+    margin: 0 auto;
+    display: inline-block;
+    min-width: 605px;
+}
+.aboutme-fig {
+    width: 35%;
     display: inline-block; 
     text-align: center;
-    padding: 10px;
+    padding: 5px;
+    position: absolute;
+    margin-top: 20px;
 }
-#aboutme-fig figure {
-    margin: 0 10px;
+.aboutme-fig figure {
+    margin: 0 5px;
 }
-#aboutme-img {
-    height: 300px;
+.aboutme-img {
+    height: 400px;
+}
+.aboutme-story h2 {
+    margin-top: 0;
 }
