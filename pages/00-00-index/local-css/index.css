@@ -12,3 +12,53 @@
 #introduction strong {
     text-align: center;
 }
+
+.supporting {
+    padding-top: 40px;
+    margin-bottom: 80px;
+}
+
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.supporting .web-development {
+    font-family: 'Raleway', sans-serif;
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+}
+.supporting img {
+    height: 150px;
+}
+
+.supporting h2 {
+    font-weight: 600;
+    font-size: 23px;
+    text-transform: uppercase;
+}
+.supporting p {
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 25px;
+    line-height: 20px;
+}
+.supporting a {
+    color: black;
+    background-color: #f7a47f;
+    font-weight: 600;
+    font-size: 17px;
+    letter-spacing: 1.3px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+.supporting a:hover {
+    background-color: #7ff7a4;
+}
