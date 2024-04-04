@@ -31,10 +31,11 @@ header {
 .nav {
     background-color: #f7a47f;
     text-align: center;
+    letter-spacing: 0.1em;
 }
 
 .nav a {
-    background: #f7a47f;
+    background-color: #f7a47f;
     border-right: 1px solid black;
     border-left: 1px solid black;
     color: black;
@@ -46,12 +47,16 @@ header {
     font-weight: 600;
 }
 
-.nav a:hover {
-    background: #7ff7a4;
+.active-page, .nav a:hover {
+    background-color: #7ff7a4 !important;
     color: black;
-    border-right: 3px solid grey;
-    border-left: 3px solid grey;
-    margin: 3px 8px;
+    border-right: 3px solid grey !important;
+    border-left: 3px solid grey !important;
+    margin: 3px 8px !important;
+}
+
+.active-page, .nav a:active {
+    color: #0876a8 !important;
 }
 
 main {
