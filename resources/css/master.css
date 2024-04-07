@@ -1,70 +1,115 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 1000px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  html {
+    font-size: 14px;
+  }
 }
 
 body {
   font-family: "Quicksand", sans-serif;
   font-weight: 500;
   font-style: normal;
-  margin: 0 auto;
 }
 
-header {
-    width: 100%;
-    position: fixed;
-    z-index: 10;
-    background-color: #7fd2f7;
-    border-bottom: 2px solid grey;
-    top: 0px;
+body, html {
+  margin: 0;
+  padding: 0;
 }
 
-.banner {
-    padding: 30px 20px;
-    text-align: center;
-    border-bottom: 2px solid grey ;
-}
-
-.banner img {
-    height: 175px;
-}
-
-.nav {
-    background-color: #f7a47f;
-    text-align: center;
-}
-
-.nav a {
-    background: #f7a47f;
-    border-right: 1px solid black;
-    border-left: 1px solid black;
-    color: black;
-    display: inline-block;
-    padding: 8px;
-    margin: 3px 10px;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 600;
-}
-
-.nav a:hover {
-    background: #7ff7a4;
-    color: black;
-    border-right: 3px solid grey;
-    border-left: 3px solid grey;
-    margin: 3px 8px;
+.container-all {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 main {
-    position: relative;
-    margin-top: 287px;
-    margin-left: 20px;
-    margin-right: 20px;
+  flex: 1;
+}
+
+/*Banner and navigation */
+
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  top: 0px;
+  background: hsla(200, 67%, 55%, 1);
+  background: linear-gradient(90deg, hsla(200, 67%, 55%, 1) 0%, hsla(174, 37%, 60%, 1) 100%);
+  background: -moz-linear-gradient(90deg, hsla(200, 67%, 55%, 1) 0%, hsla(174, 37%, 60%, 1) 100%);
+  background: -webkit-linear-gradient(90deg, hsla(200, 67%, 55%, 1) 0%, hsla(174, 37%, 60%, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#3DA5D9", endColorstr="#73BFB8", GradientType=1 );
+  box-shadow: 0px 1px;
+}
+
+.banner {
+  padding: 15px 20px;
+  text-align: center;
+  border-bottom: 0px solid black;
+}
+
+.banner img {
+  height: 110px;
+}
+
+.nav {
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+.nav a {
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  color: #000;
+  display: inline-block;
+  padding: 8px;
+  margin: 0px 10px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.active-page, .nav a:hover {
+  background-color: #2364AA !important;
+  color: #fff;
+  border-right: 3px solid white !important;
+  border-left: 3px solid white !important;
+  margin: 0px 8px !important;
+}
+
+.active-page, .nav a:active {
+  color: #fff !important;
+}
+.nav a:active {
+  background-color: #3DA5D9 !important;
+}
+
+/*main section */
+main {
+  position: relative;
+  margin-top: 200px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 50px;
 }
 
 .page-title {
-    margin: 0 auto 5px auto;
-    position: relative;
-    top: 15px;
+  margin: 0 auto;
+  position: relative;
+  top: 0px;
+  padding: 15px;
 }
 
 .page-title h1 {
@@ -76,26 +121,23 @@ main {
   position:relative;
 }
 
+/*footer*/
 footer {
-    background-color: #7fd2f7;
-    padding: 0px 0;
-    width: 100%;
-    bottom: 0px;
-    position: fixed;
-    z-index: 2;
+  height: 40px;
+  background: hsla(200, 67%, 55%, 1);
+  background: linear-gradient(90deg, hsla(200, 67%, 55%, 1) 0%, hsla(174, 37%, 60%, 1) 100%);
+  background: -moz-linear-gradient(90deg, hsla(200, 67%, 55%, 1) 0%, hsla(174, 37%, 60%, 1) 100%);
+  background: -webkit-linear-gradient(90deg, hsla(200, 67%, 55%, 1) 0%, hsla(174, 37%, 60%, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#3DA5D9", endColorstr="#73BFB8", GradientType=1 );
+  display: flex;
 }
-.created-by {
-    max-width: 940px;
-    margin: 0 auto;
-    padding: 0 10px;
-    text-align: center;
+footer .created-by {
+  flex-grow: 1;
+  align-self: center;
 }
 .created-by p {
-    font-size: 15px;
-    font-weight: 300;
-    font-style: italic;
-    margin: 10px 0px;
-}
-.text-center {
-    text-align: center;
+  text-align: center;
+  margin: 0;
+  color: #000;
+  font-style: italic;
 }
