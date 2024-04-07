@@ -51,17 +51,20 @@
 }
 .supporting a {
     color: black;
-    background-color: #f7a47f;
     font-weight: 600;
     font-size: 17px;
     letter-spacing: 1.3px;
     text-decoration: none;
     text-transform: uppercase;
     padding: 15px;
-    border: 2px solid black;
+    border: 2px solid #2364AA;
     border-radius: 4px;
     margin-bottom: 10px;
 }
 .supporting a:hover {
-    background-color: #7ff7a4;
+    background-color: #2364AA;
+    color: #fff;
+}
+.supporting a:active {
+    background-color: #3DA5D9;
 }
