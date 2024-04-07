@@ -124,7 +124,11 @@ main {
 /*footer*/
 footer {
   height: 40px;
-  background-color: #2364AA;
+  background: hsla(200, 67%, 55%, 1);
+  background: linear-gradient(90deg, hsla(200, 67%, 55%, 1) 0%, hsla(174, 37%, 60%, 1) 100%);
+  background: -moz-linear-gradient(90deg, hsla(200, 67%, 55%, 1) 0%, hsla(174, 37%, 60%, 1) 100%);
+  background: -webkit-linear-gradient(90deg, hsla(200, 67%, 55%, 1) 0%, hsla(174, 37%, 60%, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#3DA5D9", endColorstr="#73BFB8", GradientType=1 );
   display: flex;
 }
 footer .created-by {
@@ -134,6 +138,6 @@ footer .created-by {
 .created-by p {
   text-align: center;
   margin: 0;
-  color: #fff;
+  color: #000;
   font-style: italic;
 }
