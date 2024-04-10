@@ -39,6 +39,15 @@ main {
   flex: 1;
 }
 
+a {
+  cursor: pointer;
+  color: #2364AA;;
+
+}
+a:active {
+  color: #3DA5D9;
+}
+
 /*Banner and navigation */
 
 header {
@@ -68,6 +77,13 @@ header {
   text-align: center;
   letter-spacing: 0.1em;
 }
+.nav ul {
+  margin: 0;
+}
+
+.nav li {
+  display: inline;
+}
 
 .nav a {
   border-right: 1px solid black;
@@ -81,12 +97,17 @@ header {
   font-weight: 600;
 }
 
+.nav a:hover{
+  transition: background-color .15s;
+}
+
 .active-page, .nav a:hover {
   background-color: #2364AA !important;
   color: #fff;
   border-right: 3px solid white !important;
   border-left: 3px solid white !important;
   margin: 0px 8px !important;
+  text-decoration: underline !important;
 }
 
 .active-page, .nav a:active {
@@ -99,7 +120,7 @@ header {
 /*main section */
 main {
   position: relative;
-  margin-top: 200px;
+  margin-top: 184px;
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 50px;
@@ -107,9 +128,7 @@ main {
 
 .page-title {
   margin: 0 auto;
-  position: relative;
-  top: 0px;
-  padding: 15px;
+  padding: 20px;
 }
 
 .page-title h1 {
