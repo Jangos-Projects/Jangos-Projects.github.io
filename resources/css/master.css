@@ -39,6 +39,15 @@ main {
   flex: 1;
 }
 
+a {
+  cursor: pointer;
+  color: #2364AA;;
+
+}
+a:active {
+  color: #3DA5D9;
+}
+
 /*Banner and navigation */
 
 header {
@@ -46,70 +55,159 @@ header {
   position: fixed;
   z-index: 10;
   top: 0px;
+
   background: hsla(200, 67%, 55%, 1);
   background: linear-gradient(90deg, hsla(200, 67%, 55%, 1) 0%, hsla(174, 37%, 60%, 1) 100%);
   background: -moz-linear-gradient(90deg, hsla(200, 67%, 55%, 1) 0%, hsla(174, 37%, 60%, 1) 100%);
   background: -webkit-linear-gradient(90deg, hsla(200, 67%, 55%, 1) 0%, hsla(174, 37%, 60%, 1) 100%);
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#3DA5D9", endColorstr="#73BFB8", GradientType=1 );
-  box-shadow: 0px 1px;
 }
 
-.banner {
-  padding: 15px 20px;
-  text-align: center;
-  border-bottom: 0px solid black;
+.banner-nav {
+  display: flex;
+  flex-flow: row;  
+  padding: 0.5rem 2rem;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.15), 
+  0px 4px 8px rgba(0,0,0,0.15), 
+  0px 8px 16px rgba(0,0,0,0.15), 
+  0px 16px 32px rgba(0,0,0,0.15);
 }
 
-.banner img {
-  height: 110px;
+header .logo-small {
+  display: none;
+}
+header .logo-small img {
+  height: 70px;
 }
 
-.nav {
+.logo-small {
+  padding: 10px 20px;
+  align-self: center;
+
+} 
+.logo-big {
+  margin-left: 2rem;
+  padding: 0;
+  text-align: center;  
+}
+
+.logo-big img {
+  height: 120px;
+}
+
+header nav {
+  display: flex;
+  flex: 2;
+  align-self: center;
   text-align: center;
   letter-spacing: 0.1em;
+  padding-bottom: 1px;
+}
+header nav ul {
+  flex: 1;
+  margin: 0;
+  align-items: center;
+  padding: 0;
+  text-align: end;
 }
 
-.nav a {
-  border-right: 1px solid black;
-  border-left: 1px solid black;
-  color: #000;
+header nav li {
+  display: inline;
+  align-items: center;
+  padding-left: 2.5rem;
+}
+
+header nav a {
+  color: #2E2E2E;
   display: inline-block;
   padding: 8px;
   margin: 0px 10px;
   text-decoration: none;
   font-size: 18px;
   font-weight: 600;
+  border-radius: 5px;
 }
 
-.active-page, .nav a:hover {
+header nav a:hover {
   background-color: #2364AA !important;
   color: #fff;
-  border-right: 3px solid white !important;
-  border-left: 3px solid white !important;
-  margin: 0px 8px !important;
+  text-decoration: underline !important; 
+  box-shadow: inset 0px 2px 4px rgba(0,0,0,0.15), 
+              inset 0px 4px 8px rgba(0,0,0,0.15), 
+              inset 0px 8px 16px rgba(0,0,0,0.15);
+  transition: 0.2s;
+  transform: translateY(2px);
+
 }
 
-.active-page, .nav a:active {
+header nav a:active {
   color: #fff !important;
 }
-.nav a:active {
+header nav a:active {
   background-color: #3DA5D9 !important;
 }
 
+@media only screen and (max-width: 990px) {
+  .banner-nav {
+    flex-flow: column;
+    padding-bottom: 0;
+  }
+  header .logo-big {
+    display: none;
+    flex-shrink: -1;
+  }
+  header .logo-small {
+    display: block;
+  }
+  header nav {  
+    display: block;
+    align-self: center;
+    margin-right: 0;
+  }
+
+  header nav ul {
+    display: block;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 630px) {
+  .banner-nav {
+    padding: 0;
+  }
+  header .image-container {
+    padding: 8px 0 2px 0;
+  }
+  header .logo-small img{
+    height: 50px;
+  }
+  header nav a {
+    font-size: 12px;
+  }
+}
+
 /*main section */
+
+.page-content {
+  width: 96%;
+  margin-left: auto;
+  margin-right: auto;
+  flex: 1;       
+  box-shadow: 0 9px 0px 0px rgba(0,0,0,0.15), 
+              0 -9px 0px 0px rgba(0,0,0,0.15), 
+              12px 0 15px -4px rgba(0,0,0,0.15),
+              -12px 0 15px -4px rgba(0,0,0,0.15);
+  }
+  
 main {
   position: relative;
-  margin-top: 200px;
+  margin-top: 143px;
   margin-left: 20px;
   margin-right: 20px;
-  margin-bottom: 50px;
 }
 
 .page-title {
   margin: 0 auto;
-  position: relative;
-  top: 0px;
-  padding: 15px;
+  padding: 30px 20px;
 }
 
 .page-title h1 {
@@ -121,6 +219,39 @@ main {
   position:relative;
 }
 
+
+
+@media only screen and (max-width: 990px) {
+  main {
+    margin-top: 142px;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 35px;
+  }
+  main .page-title{
+    padding: 20px 10px;
+  } 
+  .page-title h1{
+    font-size: 40px;
+  }
+}
+  @media only screen and (max-width: 630px) {
+    main {
+      margin-top: 97px;
+    }
+    .page-content {
+      box-shadow: none;
+    }
+    .page-title h1{
+      font-size: 30px;
+    }
+  }
+  @media only screen and (max-width: 473px) {
+    main {
+      margin-top: 127px;
+    }
+  } 
+
 /*footer*/
 footer {
   height: 40px;
@@ -130,6 +261,7 @@ footer {
   background: -webkit-linear-gradient(90deg, hsla(200, 67%, 55%, 1) 0%, hsla(174, 37%, 60%, 1) 100%);
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#3DA5D9", endColorstr="#73BFB8", GradientType=1 );
   display: flex;
+  margin-top: 0;
 }
 footer .created-by {
   flex-grow: 1;

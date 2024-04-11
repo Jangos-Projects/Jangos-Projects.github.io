@@ -1,24 +1,27 @@
+
+  main {
+    padding-bottom: 80px;
+  }
 #introduction {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 15px;
-    width: 70%;
+    width: 95%;
 
 }
 #introduction p {
     font-size: 22px;
     text-align: center;
-    line-height: 1.8em;
+    line-height: 1em;
+    margin: 10px auto;
 }
 
 #thank-you {
     text-align: center;
     font-size: 27px;
-
+    margin-top: 20px;
 }
 .supporting {
     padding-top: 40px;
-    margin-bottom: 80px;
 }
 
 .container {
@@ -29,7 +32,6 @@
 }
 
 .supporting .web-development {
-    font-family: 'Raleway', sans-serif;
     display: inline-block;
     height: 200px;
     width: 200px;
@@ -39,32 +41,48 @@
 }
 
 .supporting h2 {
+    font-family: "League Spartan", sans-serif;
     font-weight: 600;
-    font-size: 23px;
+    font-size: 30px;
     text-transform: uppercase;
+    margin-top: 24px;
+    margin-bottom: 18px;
 }
 .supporting p {
-    font-weight: 400;
-    font-size: 16px;
+    font-weight: 500;
+    font-size: 17px;
     margin-bottom: 25px;
     line-height: 20px;
+    margin-bottom: 32px;
 }
-.supporting a {
-    color: black;
+.learn-more-btn {
+    color: #000;
     font-weight: 600;
-    font-size: 17px;
+    font-size: 20px;
     letter-spacing: 1.3px;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 15px;
+    padding: 20px;
     border: 2px solid #2364AA;
-    border-radius: 4px;
-    margin-bottom: 10px;
+    border-radius: 8px;
 }
-.supporting a:hover {
+.learn-more-btn:hover {
     background-color: #2364AA;
     color: #fff;
+    text-decoration: underline;
+    transition: all .15s ease-in;
 }
-.supporting a:active {
+.learn-more-btn:active {
     background-color: #3DA5D9;
+    color: #000;
+    font-size: 22px;
+    transition: all .15s ease-in-out;
 }
+@media only screen and (max-width: 990px) {
+    #introduction {
+      width: 95%;
+    }
+    #introduction p {
+        font-size: 16px;
+    }
+  }
