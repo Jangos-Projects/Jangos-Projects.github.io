@@ -5,29 +5,31 @@
 #introduction {
     margin-left: auto;
     margin-right: auto;
-    width: 95%;
+
 
 }
 #introduction p {
-    font-size: 22px;
+    font-size: 1.6em;
     text-align: center;
-    line-height: 1em;
-    margin: 10px auto;
+    line-height: 1.4em;
+    padding: 1em 2.5em;
+    margin-top: 0;
+    margin-bottom: 0em;
 }
 
 #thank-you {
     text-align: center;
-    font-size: 27px;
-    margin-top: 20px;
+    font-size: 1.68em;
+    margin-top: 1.25em;
 }
 .supporting {
-    padding-top: 40px;
+    padding-top: 2.5em;
 }
 
 .container {
     max-width: 940px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 0.625em;
     text-align: center;
 }
 
@@ -43,9 +45,9 @@
 .supporting h2 {
     font-family: "League Spartan", sans-serif;
     font-weight: 600;
-    font-size: 30px;
+    font-size: 1.875em;
     text-transform: uppercase;
-    margin-top: 24px;
+    margin-top: 1.5em;
     margin-bottom: 18px;
 }
 .supporting p {
@@ -80,9 +82,10 @@
 }
 @media only screen and (max-width: 990px) {
     #introduction {
-      width: 95%;
+        margin: 0;
     }
     #introduction p {
-        font-size: 16px;
+        font-size: 1.55em;
+        padding: 1em 3em;
     }
   }
