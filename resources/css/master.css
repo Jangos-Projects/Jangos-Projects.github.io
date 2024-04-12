@@ -3,12 +3,12 @@
 }
 
 html {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 @media only screen and (max-width: 1000px) {
   html {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 
@@ -77,11 +77,11 @@ header .logo-small {
   display: none;
 }
 header .logo-small img {
-  height: 70px;
+  height: 76.5px;
 }
 
 .logo-small {
-  padding: 10px 20px;
+  padding: 0.55em 1.1em;
   align-self: center;
 
 } 
@@ -123,7 +123,7 @@ header nav a {
   padding: 8px;
   margin: 0px 10px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 1.23rem;
   font-weight: 600;
   border-radius: 5px;
 }
@@ -150,7 +150,7 @@ header nav a:active {
 @media only screen and (max-width: 990px) {
   .banner-nav {
     flex-flow: column;
-    padding-bottom: 0;
+    padding: 0;
   }
   header .logo-big {
     display: none;
@@ -163,11 +163,22 @@ header nav a:active {
     display: block;
     align-self: center;
     margin-right: 0;
+    
   }
 
   header nav ul {
     display: block;
     text-align: center;
+  }
+  header nav a {
+    font-size: 1.4em;
+  }  
+  header nav li {
+    padding: 0;
+    padding-right: 4rem;
+  }
+ header nav li:last-child {
+    padding-right: 0;
   }
 }
 @media only screen and (max-width: 630px) {
@@ -201,19 +212,19 @@ header nav a:active {
 main {
   position: relative;
   margin-top: 143px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 1.25em;
+  margin-right: 1.25em;
 }
 
 .page-title {
   margin: 0 auto;
-  padding: 30px 20px;
+  padding: 1.85em 1.25em;
 }
 
 .page-title h1 {
   font-family: "League Spartan", sans-serif;
   font-weight: 700;
-  font-size: 60px;
+  font-size: 3.75em;
   text-align: center;
   margin: auto;
   position:relative;
@@ -222,28 +233,35 @@ main {
 
 
 @media only screen and (max-width: 990px) {
+  .page-content {
+    width: 100%;
+    box-shadow: none;
+    margin: 0;
+  }
   main {
     margin-top: 142px;
     margin-right: 0;
     margin-left: 0;
-    margin-bottom: 35px;
+    margin-bottom: 0em;
+    padding: 0 1em;
   }
   main .page-title{
-    padding: 20px 10px;
+    padding: 1.25em 0.625em;
   } 
   .page-title h1{
-    font-size: 40px;
+    font-size: 3.25em;
   }
+
 }
   @media only screen and (max-width: 630px) {
     main {
       margin-top: 97px;
     }
-    .page-content {
+ /*   .page-content {
       box-shadow: none;
-    }
+    }*/
     .page-title h1{
-      font-size: 30px;
+      font-size: 1.875em;
     }
   }
   @media only screen and (max-width: 473px) {
