@@ -1,13 +1,23 @@
+
+
 .intro {
     text-align: center;
     font-weight: 600;
-    font-size: 22px;
+    font-size: 1.375em;
 }
 
 .html-css-code {
     padding: 1.5rem;
 }
 
-img {
-    height: 350px;
+.web-dev-preview {
+ display: grid;
+ width: 100%;
+ margin: auto;
 }
+
+.web-dev-preview img {
+    width: 100%;
+    max-width: 1000px;
+}
+
