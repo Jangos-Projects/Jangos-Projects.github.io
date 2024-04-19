@@ -6,17 +6,19 @@ html {
   font-size: 16px;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 990px) {
   html {
     font-size: 15px;
   }
 }
 
-@media only screen and (max-width: 680px) {
+
+@media only screen and (max-width: 430px) {
   html {
     font-size: 14px;
   }
 }
+
 
 body {
   font-family: "Quicksand", sans-serif;
@@ -66,38 +68,27 @@ header {
 .banner-nav {
   display: flex;
   flex-flow: row;  
-  padding: 0.5rem 2rem;
+  padding: 0.6rem 2rem 0.5rem 2rem;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.15), 
   0px 4px 8px rgba(0,0,0,0.15), 
   0px 8px 16px rgba(0,0,0,0.15), 
   0px 16px 32px rgba(0,0,0,0.15);
 }
 
-header .logo-small {
-  display: none;
-}
-header .logo-small img {
-  height: 76.5px;
-}
 
-.logo-small {
-  padding: 0.55em 1.1em;
-  align-self: center;
-
-} 
-.logo-big {
-  margin-left: 2rem;
+header .logo img {
+  height: 60px;
+}
+ 
+.logo {
+  margin-left: 1rem;
   padding: 0;
   text-align: center;  
 }
 
-.logo-big img {
-  height: 120px;
-}
-
 header nav {
   display: flex;
-  flex: 2;
+  flex: 1;
   align-self: center;
   text-align: center;
   letter-spacing: 0.1em;
@@ -117,13 +108,17 @@ header nav li {
   padding-left: 2.5rem;
 }
 
+header nav li:first-child {
+  padding-left: 0;
+}
+
 header nav a {
   color: #2E2E2E;
   display: inline-block;
   padding: 8px;
   margin: 0px 10px;
   text-decoration: none;
-  font-size: 1.23rem;
+  font-size: 1.15rem;
   font-weight: 600;
   border-radius: 5px;
 }
@@ -147,32 +142,34 @@ header nav a:active {
   background-color: #3DA5D9 !important;
 }
 
+
+
 @media only screen and (max-width: 990px) {
   .banner-nav {
     flex-flow: column;
     padding: 0;
   }
-  header .logo-big {
-    display: none;
-    flex-shrink: -1;
+
+  header .logo {
+    padding: 0.55em 1.1em;
+    align-self: center;
+    margin-left: 0;
   }
-  header .logo-small {
-    display: block;
+  header .logo img {
+    height: 50px;
   }
+
   header nav {  
     display: block;
     align-self: center;
     margin-right: 0;
-    
   }
 
   header nav ul {
     display: block;
     text-align: center;
   }
-  header nav a {
-    font-size: 1.4em;
-  }  
+
   header nav li {
     padding: 0;
     padding-right: 4rem;
@@ -180,7 +177,11 @@ header nav a:active {
  header nav li:last-child {
     padding-right: 0;
   }
+
+
 }
+
+
 @media only screen and (max-width: 630px) {
   .banner-nav {
     padding: 0;
@@ -188,13 +189,64 @@ header nav a:active {
   header .image-container {
     padding: 8px 0 2px 0;
   }
-  header .logo-small img{
+  header .logo img{
     height: 50px;
   }
+  header nav li {
+    padding-right: .5rem;
+  }
   header nav a {
-    font-size: 12px;
+    font-size: 1em;
   }
 }
+
+
+
+@media only screen and (max-width: 430px) {
+  .banner-nav {
+    flex-flow: column;
+    padding: 0;
+  }
+
+  header .logo {
+    display: block;
+    padding-bottom: 0;
+  }  
+  header .logo img {
+    height: 40px;
+  }
+  header nav {  
+    display: block;
+    align-self: center;
+    margin-right: 0;
+  }
+  header nav ul {
+    display: block;
+    text-align: center;
+  }
+  header nav a {
+    font-size: 0.9rem;
+    margin: 0 0.5rem;
+  }  
+  header nav li {
+    padding: 0;
+  }
+ header nav li:last-child {
+    padding-right: 0;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  header .logo {
+    overflow: auto;
+  }
+  header nav a {
+    font-size: 0.8rem;
+  }
+
+}
+
+
 
 /*main section */
 
@@ -211,7 +263,7 @@ header nav a:active {
   
 main {
   position: relative;
-  margin-top: 143px;
+  margin-top: 82px;
   margin-left: 1.25em;
   margin-right: 1.25em;
 }
@@ -228,6 +280,7 @@ main {
   text-align: center;
   margin: auto;
   position:relative;
+  text-transform: capitalize;
 }
 
 
@@ -239,7 +292,7 @@ main {
     margin: 0;
   }
   main {
-    margin-top: 142px;
+    margin-top: 109px;
     margin-right: 0;
     margin-left: 0;
     margin-bottom: 0em;
@@ -248,27 +301,46 @@ main {
   main .page-title{
     padding: 1.25em 0.625em;
   } 
-  .page-title h1{
-    font-size: 3.25em;
-  }
 
+  .page-title h1{
+    font-size: 3.5em;
+  }
+*/
 }
-  @media only screen and (max-width: 630px) {
+@media only screen and (max-width: 630px) {
     main {
-      margin-top: 97px;
+      margin-top: 100px;
     }
  /*   .page-content {
       box-shadow: none;
-    }*/
+    }
+    */
     .page-title h1{
-      font-size: 1.875em;
+      font-size: 3.25em;
     }
-  }
-  @media only screen and (max-width: 473px) {
+
+}
+
+@media only screen and (max-width: 430px) {
     main {
-      margin-top: 127px;
+      margin-top: 86px;
     }
-  } 
+    main .page-title {
+      padding: 1.8em 0.625em;
+    }
+    .page-title h1{
+      font-size: 3em;
+    }
+}
+@media only screen and (max-width: 340px) {
+      main {
+        margin-top: 115px;
+      } 
+      .page-title h1 {
+        font-size: 2.75em;
+      }
+}
+
 
 /*footer*/
 footer {
@@ -279,10 +351,12 @@ footer {
   background: -webkit-linear-gradient(90deg, hsla(200, 67%, 55%, 1) 0%, hsla(174, 37%, 60%, 1) 100%);
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#3DA5D9", endColorstr="#73BFB8", GradientType=1 );
   display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
   margin-top: 0;
 }
 footer .created-by {
-  flex-grow: 1;
   align-self: center;
 }
 .created-by p {
@@ -290,4 +364,10 @@ footer .created-by {
   margin: 0;
   color: #000;
   font-style: italic;
+}
+footer .logo-icon {
+  margin-left: 0.5em;
+}
+footer .logo-icon img{
+  height: 30px;
 }
