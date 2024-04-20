@@ -23,21 +23,19 @@
     margin-top: 1.25em;
 }
 .supporting {
-    padding-top: 2.5em;
-}
-
-.container {
     max-width: 940px;
     margin: 0 auto;
-    padding: 0 0.625em;
+    padding: 2.5em 0 2em 0;
     text-align: center;
+    display: flex;
 }
 
-.supporting .web-development {
-    display: inline-block;
-    height: 200px;
-    width: 200px;
+.supporting .page-link {
+    flex: 1;
+    text-align: center;
+    padding: 0;
 }
+
 .supporting img {
     height: 150px;
 }
@@ -48,20 +46,21 @@
     font-size: 1.875em;
     text-transform: uppercase;
     margin-top: 1.5em;
-    margin-bottom: 18px;
+    margin-bottom: 1em;
 }
 .supporting p {
     font-weight: 500;
-    font-size: 17px;
-    margin-bottom: 25px;
-    line-height: 20px;
-    margin-bottom: 32px;
+    font-size: 1.0625em;
+    margin-bottom: 1.56em;
+    line-height: 1.25em;
+    margin-bottom: 2.5em;
+    padding: 0 3em;
 }
 .learn-more-btn {
     color: #000;
     font-weight: 600;
-    font-size: 20px;
-    letter-spacing: 1.3px;
+    font-size: 1.25em;
+    letter-spacing: 0.08125em;
     text-decoration: none;
     text-transform: uppercase;
     padding: 20px;
@@ -77,9 +76,18 @@
 .learn-more-btn:active {
     background-color: #3DA5D9;
     color: #000;
-    font-size: 22px;
+    font-size: 1.375em;
     transition: all .15s ease-in-out;
 }
+@media only screen and (max-width: 550px) {
+    .supporting {
+        flex-flow: column;
+    }
+    .about-me-page {
+        margin-bottom: 3.5em;
+    }
+}
+
 @media only screen and (max-width: 990px) {
     #introduction {
         margin: 0;
@@ -89,3 +97,26 @@
         padding: 1em 3em;
     }
   }
+@media only screen and (max-width: 430px) {
+    #introduction p{
+        padding: 0em 1em 1em 1em;
+    }
+
+    #thank-you {
+        font-size: 1.2em;
+    }
+}
+
+footer {
+    flex-flow: column;
+}
+
+footer .credits {
+    text-align: center;
+  }
+  
+footer .credits p {
+    margin: 0;
+    padding: 0 0.3em;
+}
+  
