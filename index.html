@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">   
@@ -14,19 +15,12 @@
     <div class="container-all">
 
       <header>
-
         <div class="banner-nav">
-
-          <div class="image-container logo-small">
-            <a href="index.html"><img src="./resources/images/Logo/jangos_projects-logo.png" alt="Jango Website Logo"></a>
+          <div class="image-container logo">
+            <a href="index.html"><img src="./resources/images/logo/Jangos-Projects-logo-icon-and-text.png" alt="Jango Website Logo"></a>
           </div>
-          <div class="image-container logo-big">
-            <a href="index.html"><img src="./resources/images/Logo/jangos_projects-logo-transparent_triangle.png" alt="Jango Website Logo"></a>
-          </div>
-
             <nav>
               <ul>
-                <li><a href="index.html" class="active-page">Home</a></li>
                 <li><a href="about-me.html">About me</a></li>
                 <li><a href="website-development.html">Web Development</a></li>
               </ul>
@@ -34,16 +28,16 @@
         </div>
       </header>
 
-        <div class="page-content">    
+      <div class="page-content">    
       <Main>
 
         <div class="page-title">
-          <h1>Welcome to Jango's Projects</h1>
+          <h1>Welcome!</h1>
         </div>
 
         <div id="introduction">
           <p>
-          My name is Jordan(aka. <strong>Jango</strong>) and i'm learning coding with <a href="https://www.codecademy.com" target="_blank" rel="noopener noreferrer">codecademy</a>. <br><br>
+          My name is Jordan(<strong>Jango</strong>) and i'm learning coding with <a href="https://www.codecademy.com" target="_blank" rel="noopener noreferrer">codecademy</a>.<br><br>
           This is my first website, Here you'll find all my projects though-out my coding journey.<br><br>
           I will be regualy updating this site with all my recent projects that I have been working on so please check out my links and my about me page to learn more about me.<br><br>
           <span id="thank-you">
@@ -53,14 +47,19 @@
         </div>
 
         <section class="supporting">
-          <div class="container">
-              <div class="web-development">
-                <img src="./resources/images/icons/web-development.png" alt="Web Development Pages icon">
+
+              <div class="page-link about-me-page">
+                <a href="./about-me.html"><img src="./resources/images/icons/personal-information.png" alt="About me"></a>
+                <h2>About me</h2>
+                <p>Learn about me and why i have got into Website development</p>
+                <a href="./about-me.html" class="learn-more-btn">Learn More</a>
+              </div>
+              <div class="page-link web-development-page">
+                <a href="./website-development.html"><img src="./resources/images/icons/developer.png" alt="Web Development Pages icon"></a>
                 <h2>Web Development</h2>
                 <p>My website pages whist learning to code HTML and CSS.</p>
-                <a href="#" class="learn-more-btn">Learn More</a>
-              </div>
-          </div>
+                <a href="website-development.html" class="learn-more-btn">Learn More</a>
+              </div>              
         </section>
         
         
@@ -69,7 +68,13 @@
       </div>
       <footer>
         <div class="created-by">
-          <p>Created by &copy;Jango's Projects</p>
+          <p>Website Created by &copy;Jango's Projects</p>
+          <div class="logo-icon">
+            <img src="./resources/images/logo/Jangos-Projects-logo-icon.png" alt="Jango's Projects Logo">
+          </div>
+        </div>       
+        <div class="credits">
+          <p>Credits: <a href="https://www.flaticon.com/free-icons/personal-information" title="personal-information icons" target="_blank" rel="noopener noreferrer">Personal-information</a> / <a href="https://www.flaticon.com/free-icons/professions-and-jobs" title="professions and jobs icons"" target="_blank" rel="noopener noreferrer">Professions and jobs</a> icons created by kliwir art - Flaticon</p>
         </div>
       </footer>
     </div>
