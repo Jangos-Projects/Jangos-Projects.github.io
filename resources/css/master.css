@@ -75,7 +75,6 @@ header {
   0px 16px 32px rgba(0,0,0,0.15);
 }
 
-
 header .logo img {
   height: 60px;
 }
@@ -138,13 +137,12 @@ header nav a:hover {
 header nav a:active {
   color: #fff !important;
 }
+
 header nav a:active {
   background-color: #3DA5D9 !important;
 }
 
-
-
-@media only screen and (max-width: 990px) {
+@media only screen and (max-width: 800px) {
   .banner-nav {
     flex-flow: column;
     padding: 0;
@@ -177,10 +175,7 @@ header nav a:active {
  header nav li:last-child {
     padding-right: 0;
   }
-
-
 }
-
 
 @media only screen and (max-width: 630px) {
   .banner-nav {
@@ -199,8 +194,6 @@ header nav a:active {
     font-size: 1em;
   }
 }
-
-
 
 @media only screen and (max-width: 430px) {
   .banner-nav {
@@ -240,13 +233,11 @@ header nav a:active {
   header .logo {
     overflow: auto;
   }
-  header nav a {
+ /* header nav a {
     font-size: 0.8rem;
   }
-
+*/
 }
-
-
 
 /*main section */
 
@@ -270,7 +261,7 @@ main {
 
 .page-title {
   margin: 0 auto;
-  padding: 1.85em 1.25em;
+  padding:3em 1.25em 1.85em 1.25em;
 }
 
 .page-title h1 {
@@ -283,12 +274,9 @@ main {
   text-transform: capitalize;
 }
 
-
-
 @media only screen and (max-width: 990px) {
   .page-content {
     width: 100%;
-    box-shadow: none;
     margin: 0;
   }
   main {
@@ -301,20 +289,16 @@ main {
   main .page-title{
     padding: 1.25em 0.625em;
   } 
-
   .page-title h1{
     font-size: 3.5em;
   }
-*/
+
 }
+
 @media only screen and (max-width: 630px) {
     main {
       margin-top: 100px;
     }
- /*   .page-content {
-      box-shadow: none;
-    }
-    */
     .page-title h1{
       font-size: 3.25em;
     }
@@ -332,19 +316,22 @@ main {
       font-size: 3em;
     }
 }
+
 @media only screen and (max-width: 340px) {
-      main {
-        margin-top: 115px;
-      } 
       .page-title h1 {
         font-size: 2.75em;
       }
+}
+@media only screen and (max-width: 266px) {
+  main {
+    margin-top: 117px;
+  }
 }
 
 
 /*footer*/
 footer {
-  height: 40px;
+  height: auto;
   background: hsla(200, 67%, 55%, 1);
   background: linear-gradient(90deg, hsla(200, 67%, 55%, 1) 0%, hsla(174, 37%, 60%, 1) 100%);
   background: -moz-linear-gradient(90deg, hsla(200, 67%, 55%, 1) 0%, hsla(174, 37%, 60%, 1) 100%);
@@ -356,18 +343,27 @@ footer {
   justify-content: center;
   margin-top: 0;
 }
+
 footer .created-by {
+  flex: 1;
   align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 .created-by p {
   text-align: center;
   margin: 0;
   color: #000;
   font-style: italic;
 }
+
 footer .logo-icon {
   margin-left: 0.5em;
+  padding: 0.25em;  
 }
+
 footer .logo-icon img{
   height: 30px;
 }
