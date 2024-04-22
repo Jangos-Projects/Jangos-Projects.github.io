@@ -1,45 +1,61 @@
 .aboutme {
-    width: 100%;
-    display: inline-block;
+    padding: 1em;
+}
+
+.about-me-story-fig {
+    display: flex;
+
 }
 
 .aboutme-story {
-    width: 65%;
-    margin: 0 auto;
-    display: inline-block;
-    min-width: 605px;
-    padding: 1rem;
+    flex: 2;
 }
-.aboutme-fig {
-    width: 35%;
-    display: inline-block; 
+
+.aboutme-fig-container {
     text-align: center;
-    padding: 5px;
-    position: absolute;
-    margin-top: 20px;
+    padding: 0 1em 0 2em;
+    margin: auto;
+    flex: 1;
 }
-.aboutme-fig figure {
-    margin: 0 5px;
+
+.aboutme-fig {
+    width: 350px;
+    margin: auto;
+    padding: 1em 1em 0 1em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .aboutme-img {
-    height: 300px;
-    box-shadow: 0px 2px 2px;
+    width:100%;
+}
+.aboutme-fig-container figcaption {
+    padding: 0.3125em;
+    font-size: 1em;
 }
 .aboutme-story h2 {
     margin-top: 0;
 }
 
-@media only screen and (max-width: 954px) {
-    .aboutme-story {
-        width: 100%;
-        display: block;
-        min-width: auto;
+@media only screen and (max-width: 990px) {
+    .about-me-story-fig {
+        flex-flow: column;
+    }
+    .aboutme-fig-container {
+        padding: 1em;
     }
     .aboutme-fig {
-        display: block;
-        position: relative;
-        width: auto;
-        padding: 1rem;
-        margin: auto;
+        width: 300px;
+    }
+}
+@media only screen and (max-width: 380px) {
+    .aboutme-fig {
+    width: auto;
+    }    
+}
+@media only screen and (max-width: 270px) {
+    .aboutme-fig-container figcaption {
+        font-size: 0.85em ;
+    }
+    .aboutme-fig {
+        padding: 0.5em 0.5em 0 0.5em;
     }
 }
