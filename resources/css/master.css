@@ -278,6 +278,7 @@ main {
   .page-content {
     width: 100%;
     margin: 0;
+    box-shadow: none;
   }
   main {
     margin-top: 109px;
