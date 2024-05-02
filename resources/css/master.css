@@ -39,6 +39,7 @@ body, html {
 
 main {
   flex: 1;
+  padding-bottom: 1.5em;
 }
 
 a {
@@ -260,8 +261,7 @@ main {
 }
 
 .page-title {
-  margin: 0 auto;
-  padding:3em 1.25em 1.85em 1.25em;
+  padding: 2em;
 }
 
 .page-title h1 {
@@ -274,6 +274,21 @@ main {
   text-transform: capitalize;
 }
 
+.page-introduction {
+  padding: 0 2em;
+  margin: 0 2em;
+}
+.page-introduction p {
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.4em;
+}
+
+.page-introduction p:first-child {
+  margin-top: 0;
+}
+
+
 @media only screen and (max-width: 990px) {
   .page-content {
     width: 100%;
@@ -281,47 +296,51 @@ main {
     box-shadow: none;
   }
   main {
-    margin-top: 109px;
     margin-right: 0;
     margin-left: 0;
     margin-bottom: 0em;
-    padding: 0 1em;
+    padding: 0 1em 1.5em 1em;
   }
-  main .page-title{
-    padding: 1.25em 0.625em;
+  .page-title {
+    padding: 2em 1.25em 1.85em 1.25em;
   } 
   .page-title h1{
     font-size: 3.5em;
   }
+}
 
+@media only screen and (max-width: 800px) {
+  main {
+    margin-top: 109px;
+  }
 }
 
 @media only screen and (max-width: 630px) {
-    main {
-      margin-top: 100px;
-    }
-    .page-title h1{
-      font-size: 3.25em;
-    }
+  main {
+    margin-top: 100px;
+  }
+  .page-title h1{
+    font-size: 3.25em;
+  }
 
 }
 
 @media only screen and (max-width: 430px) {
-    main {
-      margin-top: 86px;
-    }
-    main .page-title {
-      padding: 1.8em 0.625em;
-    }
-    .page-title h1{
-      font-size: 3em;
-    }
+  main {
+    margin-top: 86px;
+  }
+  main .page-title {
+    padding: 1.8em 0.625em;
+  }
+  .page-title h1{
+    font-size: 3em;
+  }
 }
 
 @media only screen and (max-width: 340px) {
-      .page-title h1 {
-        font-size: 2.75em;
-      }
+  .page-title h1 {
+    font-size: 2.75em;
+  }
 }
 @media only screen and (max-width: 266px) {
   main {
