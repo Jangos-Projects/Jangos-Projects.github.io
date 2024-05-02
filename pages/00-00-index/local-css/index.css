@@ -1,27 +1,16 @@
-
-  main {
-    padding-bottom: 80px;
-  }
-#introduction {
-    margin-left: auto;
-    margin-right: auto;
-
-
+.page-introduction {
+  padding: 0 3em ;
 }
-#introduction p {
-    font-size: 1.6em;
-    text-align: center;
-    line-height: 1.4em;
-    padding: 1em 2.5em;
-    margin-top: 0;
-    margin-bottom: 0em;
+.page-introduction p {
+  font-size: 1.6em;
 }
 
 #thank-you {
     text-align: center;
-    font-size: 1.68em;
+    font-size: 1.5em;
     margin-top: 1.25em;
 }
+
 .supporting {
     max-width: 940px;
     margin: 0 auto;
@@ -29,17 +18,14 @@
     text-align: center;
     display: flex;
 }
-
 .supporting .page-link {
     flex: 1;
     text-align: center;
     padding: 0;
 }
-
 .supporting img {
     height: 150px;
 }
-
 .supporting h2 {
     font-family: "League Spartan", sans-serif;
     font-weight: 600;
@@ -56,6 +42,7 @@
     margin-bottom: 2.5em;
     padding: 0 3em;
 }
+
 .learn-more-btn {
     color: #000;
     font-weight: 600;
@@ -63,7 +50,7 @@
     letter-spacing: 0.08125em;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 20px;
+    padding: 1.25em;
     border: 2px solid #2364AA;
     border-radius: 8px;
 }
@@ -79,44 +66,93 @@
     font-size: 1.375em;
     transition: all .15s ease-in-out;
 }
-@media only screen and (max-width: 550px) {
-    .supporting {
-        flex-flow: column;
-    }
-    .about-me-page {
-        margin-bottom: 3.5em;
-    }
-}
-
-@media only screen and (max-width: 990px) {
-    #introduction {
-        margin: 0;
-    }
-    #introduction p {
-        font-size: 1.55em;
-        padding: 1em 3em;
-    }
-  }
-@media only screen and (max-width: 430px) {
-    #introduction p{
-        padding: 0em 1em 1em 1em;
-    }
-
-    #thank-you {
-        font-size: 1.2em;
-    }
-}
 
 footer {
     flex-flow: column;
 }
-
 footer .credits {
     text-align: center;
   }
-  
 footer .credits p {
     margin: 0;
     padding: 0 0.3em;
 }
-  
+
+@media only screen and (max-width: 990px) {
+  .page-introduction p {
+    font-size: 1.5em;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .page-introduction {
+    padding: 0 1.8em;
+    margin: 0 1.5em;
+  }
+  .page-introduction p {
+    font-size: 1.3em;
+  }
+  #thank-you {
+    font-size: 1.3em;
+  }
+  .supporting {
+    flex-flow: column;
+  }
+  .about-me-page {
+    margin-bottom: 3.5em;
+  }
+  .supporting {
+    padding: 1.5em 0 2em 0;
+  }
+  .supporting h2 {
+    margin-top: 1em;
+  }
+  .supporting img {
+    height: 120px;
+  }
+  .learn-more-btn {
+    font-size: 1em;
+    padding: 1em;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .page-introduction {
+    padding: 0 1.25em;
+    margin: 0 1.25em;
+  }
+  .page-introduction p {
+    font-size: 1.2em;
+  }
+
+  #thank-you {
+    font-size: 1.2em;
+  }
+  .supporting img {
+    height: 110px;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .page-introduction {
+    padding: 0 1em;
+    padding: 0 1em;
+  }
+  .page-introduction p {
+    font-size: 1.1em;
+  }
+  .supporting img {
+    height: 100px;
+  }
+}
+@media only screen and (max-width: 266px) {
+  .page-introduction {
+    padding: 0 0;
+    margin: 0 1em;
+  }
+  .page-introduction p {
+    font-size: 1em;
+  }
+  .supporting img {
+    height: 90px;
+  }
+}
