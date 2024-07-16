@@ -84,10 +84,6 @@ footer .credits p {
   }
 }
 @media only screen and (max-width: 550px) {
-  .page-introduction {
-    padding: 0 1.8em;
-    margin: 0 1.5em;
-  }
   .page-introduction p {
     font-size: 1.3em;
   }
@@ -116,10 +112,6 @@ footer .credits p {
 }
 
 @media only screen and (max-width: 430px) {
-  .page-introduction {
-    padding: 0 1.25em;
-    margin: 0 1.25em;
-  }
   .page-introduction p {
     font-size: 1.2em;
   }
@@ -133,10 +125,6 @@ footer .credits p {
 }
 
 @media only screen and (max-width: 340px) {
-  .page-introduction {
-    padding: 0 1em;
-    padding: 0 1em;
-  }
   .page-introduction p {
     font-size: 1.1em;
   }
@@ -145,11 +133,10 @@ footer .credits p {
   }
 }
 @media only screen and (max-width: 266px) {
-  .page-introduction {
-    padding: 0 0;
-    margin: 0 1em;
-  }
   .page-introduction p {
+    font-size: 1em;
+  }
+  .supporting p {
     font-size: 1em;
   }
   .supporting img {
