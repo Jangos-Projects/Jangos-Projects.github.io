@@ -1,3 +1,7 @@
+.page-introduction {
+  padding: 0 2em;
+}
+
 .page-introduction p {
     font-size: 1.4em;
 }
@@ -46,10 +50,6 @@
 }
 
 @media only screen and (max-width: 630px) {
-    .page-introduction {
-        padding: 0 1.8em;
-        margin: 0 1.5em;
-      }
     .page-introduction p {
         font-size: 1.2em;
       }
@@ -57,17 +57,8 @@
         width: 90%;
     }
 }
-@media only screen and (max-width: 550px) {
-    .page-introduction {
-      padding: 0 1.5em;
-      margin: 0 1.5em;
-    }
-}
-@media only screen and (max-width: 430px) {
-    .page-introduction {
-        padding: 0 1.25em;
-        margin: 0 1.25em;
-      }    
+
+@media only screen and (max-width: 430px) { 
     .page-introduction p {
         font-size: 1.15em;
       }
@@ -76,19 +67,11 @@
     }
 }
 @media only screen and (max-width: 340px) {
-    .page-introduction {
-      padding: 0 1em;
-      padding: 0 1em;
-    }
     .page-introduction p {
       font-size: 1.1em;
     }
 }
 @media only screen and (max-width: 266px) {
-    .page-introduction {
-      padding: 0 0;
-      margin: 0 1em;
-    }
     .page-introduction p {
       font-size: 1em;
     }
